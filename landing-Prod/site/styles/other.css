@@ -1,0 +1,192 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+body  {
+    font-family: 'Montserrat', sans-serif;
+    background: url('../images/background.jpg');
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container { 
+    margin:0 auto;
+    width: 82.45%;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.change { 
+    color: #6E24FF;
+}
+
+/* header */
+header { 
+    padding: 45px 0 0 0;
+}
+.navbar { 
+    justify-content: space-between;
+}
+.logo { 
+    width: 170px;
+    height: 50px;
+}
+.navbar, .nav ul { 
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap:80px;
+    align-items: center;
+}
+.nav ul li { 
+    list-style-type: none;
+}
+.nav ul li a { 
+    text-transform: uppercase;
+    font-size: calc(5px + 11 * (100vw / 1920));
+    font-weight: 500;
+}
+.payment-button { 
+    width: 14.97%;
+    height: 55px;
+    border-radius: 15px;
+    background: #6E24FF;
+    font-size: calc(5px + 11 * (100vw / 1920));;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-info { 
+    margin: 150px 0 0 0;
+    text-align: center;
+}
+.header-info h2 { 
+    font-size: calc(52px + 4 * (100vw / 1920));
+    font-weight: 700;
+}
+.header-p {
+    width: 82%;
+    margin: 0 auto;
+    font-size: calc(34px + 4 * (100vw / 1920));
+    margin-top: 38px;
+    font-weight: 400;
+}
+.start-game { 
+    width: 20.05%;
+    margin: 0 auto;
+    height: 75px;
+    margin-top: 53px;
+    border-radius: 15px;
+    background: linear-gradient(180deg, #6E24FF 0%, #6E24FF 100%);
+    box-shadow: 0px 10px 100px 0px rgba(110, 36, 255, 0.30);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(24px + 8 * (100vw / 1920));
+    font-weight: 600;
+    scroll-behavior: smooth;
+}
+
+/* main */
+
+.not-found, .development { 
+    text-align: center;
+    padding: 200px 0 260px 0;
+}
+.not-found h2 { 
+    font-size: calc(150px + 30 * (100vw / 1920)) ;
+    font-weight: 600;
+    color: #6E24FF;
+}
+.not-found p, .development p { 
+    font-size: calc(26px + 6 * (100vw / 1920)) ;
+    font-weight: 400;
+}
+
+.development img { 
+    margin: 35px 0;
+}
+
+/* footer */
+footer{
+    position: absolute;
+    bottom: 0;
+    margin: 613px 0 0 0;
+    width: 100%;
+    display:flex;
+    background:#201F1F;
+}
+.flux-logo-lil{
+    width:173px;
+    height: 50px;
+}
+.social-media { 
+    margin: 0 11.85% 0 0;
+}
+.social{
+    display:flex;
+    gap:10px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top:14px;
+    align-items: center;
+}
+.social img { 
+    width: 27px;
+    height: 26px;
+}
+.foot-zagolovok{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.global-footer{
+    width: 100%;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    padding-top:18px;
+    padding-bottom:20px;
+}
+.footer-nav{
+    list-style: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-nav li{
+    margin-top:7px;
+}
+.navigation{
+    margin: 0 16.21% 0 0;
+}
+.under-logo-text{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.flux-logo{
+    width:15.36%;
+    text-align:center;
+    margin: 0 20.96% 0 0;
+}
+.contacts{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom:78px;
+}

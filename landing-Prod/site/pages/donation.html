@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пополнение счета</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="../styles/donation.css" rel="stylesheet">
+    <script defer src="../scripts/main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="navbar">
+                <a href="../index.html" class="logo"><img src="../images/logo.png" alt="Logo"></a>
+                <div class="nav">
+                    <ul class="nav-links">
+                        <li><a class="nav-link" href="#">Новости</a></li>
+                        <li><a class="nav-link" href="#">Форум</a></li>
+                        <li><a class="nav-link" href="http://localhost/flux/flux/index.html#social-media">Соц. сети</a></li>
+                        <li><a class="nav-link" href="#">Сервера</a></li>
+                        <li><a class="nav-link" href="http://localhost/flux/flux/index.html#how-to-play">Как играть?</a></li>
+                        <li><a href="#" class="nav-link payment-button">Пополнить счет</a></li>
+                    </ul>
+                </div>
+                
+                
+            </div>  
+            <button class="burger-btn" id="burger">
+                <span></span><span></span><span></span>
+            </button>
+        </header>
+        <main>
+            <div class="container">
+                <div class="main">
+                    <div class="placeholder-1">
+                        <img class="pers-1" src="../images/pers-1.png" alt="Flux">
+                    </div>
+                    <div class="buy-valute">
+                        <div class="lil-container">
+                            <h2 class="buy-valute-big-text">Приобрести валюту</h2>
+                            <div class="buy-form">
+                                <form>
+                                    <input class="input-style" placeholder="Введите ваш Steam ID" type="text" id="steamid" name="player_steamid">
+                                    <input class="input-style" placeholder="Введите сумму" type="text" id="sum" name="summa">
+                                    <label class="label-style" for="check1">
+                                        <input class="checkbox-style" type="checkbox" id="check1">
+                                        <p class="check-text">Я ознакомился(ась) с <span class="span-check-text">пользовательским соглашением</span></p>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="convert-valute">
+                                <img src="../images/icon-ruble.svg">
+                                <p>1 рубль =</p>
+                                <img src="../images/Flux-coin.svg">
+                                <p>1 FLUX coin</p>
+                            </div>
+                            <p class="warning-text"><span class="warning">Внимание!</span> Пополнение счета - это щедрое пожертвование,<br> которое вы делаете добровольно, и в знак благодарности<br> получаете игровую валюту.</p>
+
+                            <button class="submit-button" type="submit">
+                                Пополнить счет
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    <footer>
+        <div class="container">
+            <div class="global-footer">
+                <div class="social-media">
+                    <span class="foot-zagolovok">Социальные сети</span>
+                    <div class="social">
+                        <img src="../images/vk.png">
+                        <p>vk.com/fluxproject</p>
+                    </div>
+                    <!-- <div class="social">
+                        <img src="images/yt-icon.png">
+                        <p>youtube.com/fluxproject</p>
+                    </div> -->
+                    <div class="social">
+                        <img src="../images/discord.png">
+                        <p>discord.gg/yTqwYPBE</p>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <span class="foot-zagolovok">Навигация</span>
+                    <ul class="footer-nav">
+                        <li>Новости</li>
+                        <li>Форум</li>
+                        <li>Соц.сети</li>
+                        <li>Как играть</li>
+                    </ul>
+                </div>
+                <div class="flux-logo">
+                    <img class="flux-logo-lil" alt="FLUX Project" src="../images/logo.png"><br>
+                    <span class="under-logo-text">© 2023 FLUX Project. All rights reserved</span>
+                </div>
+                <div class="contacts">
+                    <span class="foot-zagolovok">Контакты</span>
+                    <p>support@fluxproject.ru</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../scripts/nav.js"></script>
+</body>
+</html>

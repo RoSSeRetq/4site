@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+
+  screencap_prod:
+    container_name: ScreencapProd
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - '6555:80'

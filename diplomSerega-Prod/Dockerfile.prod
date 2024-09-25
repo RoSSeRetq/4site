@@ -1,0 +1,7 @@
+FROM php:fpm-alpine
+RUN docker-php-ext-install pdo mysqli pdo_mysql
+RUN docker-php-ext-install opcache
+COPY ./php_conf/prod/opcache_prod.ini /usr/local/etc/php/conf.d/opcache.ini
+COPY ./site /var/www/html/
+EXPOSE 9000
+CMD ["php-fpm"]

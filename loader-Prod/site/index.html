@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="Ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заргузочный экран FLUX Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="LogoAndQR">
+
+            <div class="qrvk">
+                <p>vk</p>
+                <img src="image/qr - vk.png" alt="Vk" class="qrvkimage"></img>
+            </div>
+
+            <img src="image/Logo.png" class="logoFlux" alt="Logo">
+
+            <div class="qrdiscord">
+                <p>discord</p>
+                <img src="image/qr - дискорд.png" alt="Discord" class="qrdiscordimage"></img>
+            </div>
+
+        </div>
+
+        <div class="Fluxsovet">
+            <p id="text">Будьте активными и вовлеченными в игровое сообщество.</p>
+        </div>
+
+        <div class="loading">
+            <div id="cube1" class="cube"></div>
+            <div id="cube2" class="cube"></div>
+            <div id="cube3" class="cube"></div>
+            <script>
+                const cubes = document.querySelectorAll('.cube');
+                cubes.forEach(cube => cube.classList.add('loading'));
+            </script>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+
+</html>

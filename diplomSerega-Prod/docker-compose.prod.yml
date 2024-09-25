@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+
+  diplom_serega_nginx:
+    container_name: DiplomSeregaNginx
+    restart: always
+    build:
+      context: .
+      dockerfile: nginx_conf/Dockerfile.prod
+    ports:
+      - '7555:80'
+    networks:
+      - internal_serega_diplom
+    
+  diplom_serega_php:
+    container_name: DiplomSeregaPHP
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    networks:
+      - internal_serega_diplom
+
+networks:
+  internal_serega_diplom:
+    driver: bridge

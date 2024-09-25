@@ -1,0 +1,668 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: days;
+    src: url("fonts/days/DaysOne-Regular.ttf");
+}
+@font-face {
+    font-family: Montserrat-Medium;
+    src: url("fonts/montserat/static/Montserrat-Medium.ttf");
+}
+@font-face {
+    font-family: Montserrat-Regular;
+    src: url("fonts/montserat/static/Montserrat-Regular.ttf");
+}
+@font-face {
+    font-family: Montserrat-SemiBold;
+    src: url("fonts/montserat/static/Montserrat-SemiBold.ttf");
+}
+body{
+    background-color: #18181B;
+
+    /* -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none; */
+}
+h3{
+    font-family: days;
+}
+p,a{
+    font-family: Montserrat-Medium;
+}
+h3,p,a{
+    color: #E8E8E8;
+}
+span{
+    color: #737375;
+    font-family: Montserrat-Regular;
+}
+.container{
+    width: 1370px;
+    margin: 0 auto;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+.slider span,button{
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+
+header .logotype a{
+    content: url("image/RentGame.png");
+    width: 205px;
+}
+header ul{
+    list-style-type: none;
+    display: flex;
+}
+header{
+    margin: 20px 0px 70px 0px;
+}
+header ul li a{
+    text-decoration: none;
+}
+header .header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-content .navigate ul{
+    gap: 60px;
+}
+header .header-content .navigate ul li a{
+    color: #737375;
+    transition: 0.3s;
+    padding-bottom: 5px;
+}
+header .header-content .navigate ul li a:hover{
+    border-bottom: 1px solid #3A35FB;
+    color: #E8E8E8;
+    transition: 0.3s;
+}
+header .header-content .navigate ul li .review{
+    background: url("image/review.png") no-repeat left;
+    background-size: 16px 16px;
+    padding-left: 25px;
+    background-position-y: 25%; 
+
+}
+header .header-content .navigate ul li .faq{
+    background: url("image/faq.png") no-repeat left;
+    background-size: 16px 16px;
+    padding-left: 25px;
+    background-position-y: 40%; 
+
+}
+header .header-content .navigate ul li .support{
+    background: url("image/support.png") no-repeat left;
+    background-size: 16px 16px;
+    padding-left: 25px;
+    background-position-y: 25%; 
+}
+header .header-content .left-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+header .header-content .left-header .singup ul{
+    gap: 10px;
+}
+header .header-content .left-header .social ul li{
+    width: 40px;
+    height: 40px;
+}
+header .header-content .left-header .social ul li .telegram{
+    background-color: #42A1D0;
+    content: url("image/telegram.png");
+    padding: 10px 8px;
+    border-radius: 10px;
+}
+header .header-content .left-header .singup ul li a{
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+header .header-content .left-header .singup ul li .sing{
+    background-color: #202022;
+}
+header .header-content .left-header .singup ul li .sings{
+    background-color: #3A35FB;
+}
+
+
+
+.back a{
+    font-family: Montserrat-Regular;
+    color: #737375;
+    text-decoration: none;
+    padding-left: 55px;
+    background: url("image/back.png") no-repeat left;
+    background-position-x: 5px;
+    background-position-y: 55%;
+    padding: 8px 0px 8px 55px;
+    transition: 0.3s;
+}
+.back a:hover{
+    color: #F7F7F7;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.zagolovok{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.zagolovok p{
+    color: #F7F7F7;
+    font-family: days;
+    font-size: 32px;
+}
+.zagolovok .categorys, .allCategoreys{
+    display: flex;
+    gap: 10px;
+}
+
+.zagolovok .categorys .allCategoreys{
+    width: 650px;
+    border-radius: 10px;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.zagolovok .categorys button{
+    background-color: #202022;
+    padding: 0px 10px;
+    border-radius: 10px;
+    color: #737375;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+}
+.zagolovok .categorys button:hover{
+    background-color: #3A35FB;
+    color: #E8E8E8;
+    transition: 0.3s;
+}
+.zagolovok .categorys .main{
+    background: url("image/categorypasive.png") no-repeat;
+    background-color: #202022;
+    background-size: 25px 25px;
+    background-position: center center;
+    width: 45px;
+    transition: 0.3s;
+}
+.zagolovok .categorys .main:hover{
+    background: url("image/categoryactive.png") no-repeat;
+    background-size: 25px 25px;
+    background-position: center center;
+    width: 45px;
+    transition: 0.3s;
+    background-color: #3A35FB;
+}
+.zagolovok .categorys .active{
+    background: url("image/categoryactive.png") no-repeat;
+    background-size: 25px 25px;
+    background-position: center center;
+    width: 45px;
+    transition: 0.3s;
+    background-color: #3A35FB;
+}
+.zagolovok .categorys .allCategoreys .active{
+    background: none;
+    width: auto;
+    background-color: #3A35FB;
+    color: #E8E8E8;
+    transition: 0.3s;
+}
+.zagolovok input{
+    color: #737375;
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 55px;
+    background: url("image/serch.png") no-repeat left;
+    background-position-x: 5px;
+    background-position-y: 55%;
+    background-color: #202022;
+}
+
+
+
+
+.allGame{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.allGame article{
+    width: 335px;
+    margin-top: 10px;
+}
+.allGame article .imageGame img{
+    width: 335px;
+    border-radius: 10px;
+}
+.allGame article .gameInfo{
+    background-color: #202022;
+    padding: 20px 20px 10px 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    border-bottom: 5px solid #202022;
+    transition: 0.3s;
+}
+.allGame article .gameInfo:hover {
+    border-bottom: 5px solid #3A35FB;
+    transition: 0.7s;
+}
+.allGame article .gameInfo .widthName{
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+.allGame article .gameInfo .gameName{
+   font-size: 20px;
+   font-family: days;
+   color: #E8E8E8;
+   text-decoration: none;
+   align-items: center;
+}
+.allGame article .gameInfo span{
+    font-size: 16px;
+}
+.allGame article .gameInfo .categoryGame{
+    margin-top: 10px;
+    display: flex;
+    gap: 5px;  
+    width: 295px;
+    white-space: nowrap;
+    overflow-x: auto;
+    border-radius: 10px;
+    cursor: grab;
+}
+.allGame article .gameInfo .categoryGame span{
+    background-color: #18181B;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+.allGame article .gameInfo .gamePrice{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px 0px 0px;
+}
+.allGame article .gameInfo .gamePrice .Price{
+    display: flex;
+    gap: 5px;
+    font-size: 24px;
+}
+.allGame article .gameInfo .gamePrice a{
+    padding: 10px 20px;
+    background-color: #18181B;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.allGame article .gameInfo .gamePrice a:hover{
+    background-color: #3A35FB;
+    transition: 0.3s;
+}
+.allGame article .gameInfo .gamePrice a::before{
+    content: url("image/corzina.png");
+    margin-right: 5px;
+}
+
+
+
+
+.pagination-block{
+    margin-top: 50px;
+}
+.pagination-block ul{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-block ul li{
+
+    list-style-type: none;
+
+}
+.pagination-block ul li a{
+    background-color: #202022;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #737375;
+    font-family: Montserrat-Regular;
+    transition: 0.3s;
+    padding: 10px;
+    width: 22px;
+    text-align: center;
+    transition: 0.3s;
+}
+.pagination-block ul li a:hover{
+    background-color: #3A35FB;
+    color: #E8E8E8;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+.reviews .headerBlock{
+    display: flex;
+    gap: 10px;
+    margin-top: 80px;
+}
+.reviews .headerBlock .icons{
+    content: url("image/coment.svg");
+}
+.reviews .headerBlock p{
+    color: #F7F7F7;
+    font-family: days;
+    font-size: 16px;
+}
+
+.reviews .lastReviews {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+.reviews .lastReviews .review{
+    background-color: #202022;
+    width: 335px;
+    border-radius: 10px;
+    border-bottom: 5px solid #202022;
+    transition: 0.3s;
+}
+.reviews .lastReviews .review:hover{
+    border-bottom: 5px solid #3A35FB;
+    transition: 0.7s;
+}
+.reviews .lastReviews .background{
+    padding: 10px 10px 5px 10px;
+}
+.reviews .lastReviews .review .headReview{
+    display: flex;
+    gap: 10px;
+}
+.reviews .lastReviews .review .headReview img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.reviews .lastReviews .review .headReview .infoReview .gameInfo, .gamePrice{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+.reviews .lastReviews .review .headReview .infoReview .gameInfo{
+    width: 256px;
+}
+.reviews .lastReviews .review .headReview .infoReview .gameInfo .games{
+    font-size: 16px;
+    font-family: days;
+}
+.reviews .lastReviews .review .headReview .infoReview .gamePrice p{
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    color: #737375;
+}
+.reviews .lastReviews .review .headReview .infoReview .comets p{
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    color: #737375;
+}
+.reviews .lastReviews .review .footerReview{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.reviews .lastReviews .review .footerReview .starReview .goodStars{
+    fill: #3A35FB;
+}
+
+
+
+
+.login{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.login p{
+    color: #fff;
+    font-size: 28px;
+    margin: 60px 0px 50px 0px;
+    font-family: days;
+}
+.login input{
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 0px;
+    background-color: #202022;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: #737375;
+    font-family: Montserrat-Regular;
+    outline: none;
+}
+.login .but{
+    cursor: pointer;
+    background-color: #3A35FB;
+    margin-top: 50px;
+    transition: all 0.8s;
+    font-family: Montserrat-Medium;
+    color: #F7F7F7;
+}
+.login .but:hover{
+    background-color: #2821fc;
+}
+.login .infotext{
+    color: #737375;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.login .infotext a{
+    font-family: Montserrat-Medium;
+    color: #3A35FB;
+    text-decoration: none;
+}
+
+
+.adminform .headertext{
+    color: #fff;
+    font-size: 28px;
+    margin: 60px 0px 50px 0px;
+    font-family: days;
+}
+.adminform input{
+    width: 300px;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px 15px;
+    background-color: #202022;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: #737375;
+    font-family: Montserrat-Regular;
+    outline: none;
+}
+.adminform .inputStyle p{
+    font-size: 16px;
+    color: #737375;
+    margin: 10px 0px;
+    font-family: Montserrat-Medium;
+}
+
+.adminform .but{
+    cursor: pointer;
+    background-color: #3A35FB;
+    transition: all 0.8s;
+    font-family: Montserrat-Medium;
+    color: #F7F7F7;
+}
+.adminform .but:hover{
+    background-color: #2821fc;
+}
+.adminform .site{
+    display: flex;
+    gap: 20px;
+}
+.adminform .site .rightSite .category{
+    display: flex;
+}
+.adminform .site .rightSite .category{
+    margin: 10px 0px 20px 0px;
+    display: flex;
+    gap: 5px;  
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+.adminform .site .rightSite .category span{
+    background-color: #202022;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
+
+.gamePage{
+    margin-top: 40px;
+    gap: 25px;
+}
+.gamePage, .headerInfo, .game, .category, .footerInfo{
+    display: flex;
+}
+.gamePage .headerInfo .game{
+    gap: 10px;
+}
+.gamePage .leftSite .imageGame img{
+    width: 460px;
+    height: 215px;
+    border-radius: 10px;
+}
+.gamePage .leftSite .buyButton{
+    margin-top: 20px;
+
+}
+.gamePage .leftSite .buyButton a{
+    padding: 13px 193px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: Montserrat-SemiBold;
+    font-size: 20px;
+    background: url("image/corzina.png") no-repeat left;
+    background-position-x: 38%;
+    background-position-y: 18px;
+    background-color: #202022;
+    transition: 0.3s;
+}
+.gamePage .leftSite .buyButton a:hover{
+    background-color: #3A35FB;
+    transition: 0.7s;
+}
+.gamePage .rightSite {
+    width: 885px;
+}
+.gamePage .rightSite .headerInfo{
+    display: flex;
+    justify-content: space-between;
+}
+.gamePage .rightSite .headerInfo .game p{
+    font-family: days;
+    font-size: 28px;
+}
+.gamePage .rightSite .headerInfo .game a{
+    content: url("image/steam.png");
+    width: 21px;
+    height: 21px;
+    margin-top: 8px;
+}
+.gamePage .rightSite .headerInfo span{
+    justify-content: space-between;
+    color: #E8E8E8;
+    font-family: Montserrat-Regular;
+    font-size: 28px;
+}
+.gamePage .rightSite .category{
+    margin-top: 20px;
+    display: flex;
+    gap: 5px;  
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+    border-radius: 10px;
+    cursor: grab;
+}
+.gamePage .rightSite .category span{
+    background-color: #202022;
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+.gamePage .rightSite .gameDescription{
+    margin-top: 30px;
+}
+.gamePage .rightSite .gameDescription p{
+    color: #E8E8E8;
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+}
+.gamePage .rightSite .gameDescription .steamSmall{
+    margin-top: 10px;
+}
+.gamePage .rightSite .gameDescription .steamSmall .steamInfo, span{
+    color: #737375;
+    font-family: Montserrat-Regular;
+    font-size: 16px;
+}
+.gamePage .rightSite .gameDescription .steamSmall span{
+    font-family: Montserrat-Medium;
+}
+.gamePage .rightSite .gameDescription .ups{
+    margin-top: 5px;
+}
+.gamePage .rightSite .footerInfo{
+    justify-content: space-between;
+    margin-top: 56px;
+}
+.gamePage .rightSite .footerInfo p{
+    font-family: Montserrat-Regular;
+    font-size: 20px;
+}
+
+
+
+
+

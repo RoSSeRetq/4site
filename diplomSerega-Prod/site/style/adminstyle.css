@@ -1,0 +1,194 @@
+.login{
+    background-color: #689A43;
+    width: 400px;
+    margin: 0 auto;
+    color: white;
+    border-radius: 15px;
+    height: 360px;
+    padding: 20px;
+    margin-top: 15%;
+}
+.login p{
+    margin: 20px;
+}
+.login input{
+    width: 375px;
+    margin: 0 auto;
+    border-radius: 15px;
+    height: 20px;
+    padding: 10px;
+}
+.login .but{
+    width: 398px;
+    margin-top: 20px;
+    border-radius: 15px;
+    height: 45px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.login .but:hover{
+    height: 50px;
+}
+
+.stats-block{
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+.stats{
+    background-color: #689A43;
+    padding: 20px;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+    width: 380px;
+    height: 190px;
+}
+.stats .count{
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+
+
+.requestBlock{
+    margin: 40px 0px;
+}
+.requestBlock .navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.requestBlock .navigation p{
+    font-size: 28px;
+}
+.requestMain{
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+}
+.requset{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+.requestMain .ticket-block{
+    border: 3px solid #689A43;
+    padding: 20px;
+    border-radius: 15px;
+    width: 443px;
+    height: 190px;
+}
+
+
+.infoabottable{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    background-color: #689A43;
+    padding: 20px;
+    color: white;
+    border-radius: 15px;
+}
+.addnewitems .opisanierequest{
+    margin: 40px 0px;
+}
+.addnewitems .opisanie{
+    margin: 20px 0px;
+    width: 1325px;
+    height: 150px;
+    padding: 20px;
+    font-size: 20px;
+    resize: none;
+    border-radius: 15px;
+    border: 2px solid #689A43;
+}
+.infoabottable p{
+    font-size: 28px;
+}
+.characteristics-goods{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+.characteristics-goods .characteristics input{
+    width: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 2px solid #689A43;
+    margin-top: 20px;
+    font-size: 16px;
+}
+.navigate input{
+    margin-top: 20px;
+}
+
+.hov{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    font-family: Montserrat-Regular;
+    cursor: pointer;
+    border: none;
+}
+.hov:hover{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.hovn{
+    text-decoration: none;
+    color: rgb(236, 236, 236);
+    border-radius: 15px;
+    padding: 15px 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+    font-family: Montserrat-Regular;
+    cursor: pointer;
+    border: none;
+    width: 300px;
+}
+.hovn:hover{
+    padding: 20px 40px;
+    font-size: 20px;
+}
+.addnewentity{
+    background-color: #2d22ca;
+}
+.confirm{
+    background-color: #689A43;
+}
+.rejected{
+    background-color: #be3e3e;
+}
+.repiat{
+    background-color: #c7b940;
+}
+
+.blocklisttxt{
+    color: #be3e3e;
+    margin-bottom: 10px;
+}
+
+.nav input{
+    margin-top: 20px;
+}
+
+#request-block{
+    display: none;
+}
+#new-block{
+    display: none;
+}
+#approve-block{
+    display: none;
+}
+#tphone-block{
+    display: none;
+}

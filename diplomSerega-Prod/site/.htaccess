@@ -1,0 +1,49 @@
+ErrorDocument 404 https://diplom.fluxproject.ru/404.php
+<FilesMatch ".(flx|gif|jpg|jpeg|png|ico|swf|js|css|pdf)$">
+    Header set Cache-Control "max-age=604800"
+</FilesMatch>
+
+
+DirectoryIndex index.php index.html index.htm
+
+
+<Filesmatch "^index.php">
+    order allow,deny
+    allow from all
+</Filesmatch>
+
+<Filesmatch "^index2.php">
+    order deny,allow
+    allow from all
+</Filesmatch>
+
+<Files ~ "\.xml$">
+    Order allow,deny
+    Deny from all
+    Satisfy all
+</Files>
+
+# Запрет доступа к файлам в директории .git
+RedirectMatch 404 /\.git
+
+# Запрет доступа к файлам с расширением .htaccess и .htpasswd
+<FilesMatch "^\.ht">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Запрет отображения списка файлов в директориях
+Options -Indexes
+
+# Запрет доступа к файлам конфигурации
+<Files "config.php">
+    Order allow,deny
+    Deny from all
+</Files>
+
+# Запрет доступа к файлам логов 
+<Files ~ "\.(log|txt)$">
+    Order allow,deny
+    Deny from all
+</Files>
+

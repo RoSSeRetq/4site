@@ -1,0 +1,572 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('../images/background.jpg');
+    color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #161616;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+h2{
+    color: #FFF;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+button{
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+}
+li { 
+    list-style-type: none;
+}
+.container { 
+    margin:0 auto;
+    width: 82.45%;
+}
+.change { 
+    color: #6E24FF;
+}
+
+/* header */
+header {
+    margin:0 auto;
+    display:flex;
+    gap: 13.22%;
+    margin-top: 48px;
+    gap:80px;
+}
+.logo { 
+    min-width: 10%;
+    width: 12.5%;
+    height: auto;
+}
+.logo img { 
+    width: 100%;
+    height: auto;
+}
+.navbar { 
+    width: 100%;
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    gap: 350px;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+.nav-links {
+    display: flex;
+    line-height: normal;
+    gap:80px;
+    align-items: center;
+}
+.nav-link{ 
+    text-transform: uppercase;
+    font-size: calc(5px + 11 * (100vw / 1920));
+    font-weight: 500;
+    line-height: normal;
+}
+.nav-links li:hover { 
+    text-decoration: underline solid #6E24FF;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+.payment-button { 
+    width: 100%;
+    height: 55px;
+    border-radius: 15px;
+    background: #6E24FF;
+    padding: 0 10px;
+    font-size: calc(5px + 11 * (100vw / 1920));;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.burger-btn { 
+    display: none;
+    position: absolute;
+    right: 35px;
+    width: 40px;
+    top: 5%;
+    height: 40px;
+    border: none;
+    background-color: transparent;
+}
+.burger-btn span { 
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    left: 5px;
+    transition: transform .5s, opacity .5s, background-color .5s;
+}
+.burger-btn span:nth-child(1){
+    transform: translateY(-10px);
+}
+.burger-btn span:nth-child(3){
+    transform: translateY(10px);
+}
+.header.open .burger-btn span:nth-child(2){
+    opacity: 0;
+}
+.header.open .burger-btn span:nth-child(1){
+    transform: translateY(0) rotate(45deg);
+}
+.header.open .burger-btn span:nth-child(3){
+    transform: translateY(0) rotate(-45deg);
+}
+/* main */
+main { 
+    margin-top: 15vh;
+}
+.main{
+    margin-top:60px;
+    display:flex;
+    justify-content: space-between;
+}
+.pers-1{
+    width: 83%; /* 789px*/
+    height: auto; /* 746.003px*/
+    flex-shrink: 0;
+}
+.buy-valute{
+    border-radius: 15px;
+    background: #201F1F;
+    width: 39.8%;
+    height: 560px;
+    flex-shrink: 0;
+}
+.lil-container{
+    width:85.4%;
+    margin: 0 auto;
+}
+.input-style{
+    border-radius: 10px;
+    background: #2E2D2D;
+    width: 87.73%;
+    height: 50px;
+    flex-shrink: 0;
+    border:none;
+    margin-top:12px;
+    color: #D5D5D5;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left:66px;
+}
+.input-style:focus{
+    border-color: #6E24FF;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem#6E24FF;
+}
+.buy-valute-big-text{
+    margin-top:38px;
+    margin-bottom:26px;
+}
+.checkbox-style{
+    border:#6E24FF solid 1px;
+    width:20px;
+    height:20px;
+}
+.check-text{
+    color: #D5D5D5;
+    font-size: calc(10px + 6 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left:15px;
+}
+.span-check-text{
+    color: #6E24FF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.label-style{
+    display:flex;
+    margin-top:34px;
+    align-items: center;
+}
+.convert-valute{
+    display:flex;
+    gap:9px;
+    align-items: center;
+    margin-top:34px;
+    color: #D5D5D5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.warning-text{
+    margin-top:18px;
+    color: #D5D5D5;
+    font-size: calc(5px + 11 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.warning{
+    color: white;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.submit-button{
+    border-radius: 10px;
+    background: #6E24FF;
+    border:none;
+    width: 100%;
+    height: 50px;
+    flex-shrink: 0;
+    margin-top:50px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+/* footer */
+footer{
+    margin: 80px 0 0 0;
+    width: 100vw;
+    display:flex;
+    background:#201F1F;
+}
+.flux-logo-lil{
+    width:173px;
+    height: 50px;
+}
+.social-media { 
+    margin: 0 11.85% 0 0;
+}
+.social{
+    display:flex;
+    gap:10px;
+    font-size: calc(8px + 6 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top:14px;
+    align-items: center;
+}
+.social img { 
+    width: 1.71%;
+    min-width: 15px;
+    height: auto;
+}
+.foot-zagolovok{
+    font-size: calc(10px + 6 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.global-footer{
+    width: 100%;
+    margin: 0;
+    display:flex;
+    padding-top:18px;
+    padding-bottom:20px;
+}
+.footer-nav{
+    list-style: none;
+    font-size: calc(8px + 6 * (100vw / 1920));
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.footer-nav li{
+    margin-top:7px;
+}
+.navigation{
+    margin: 0 16.21% 0 0;
+}
+.under-logo-text{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+.flux-logo{
+    width:15.36%;
+    text-align:center;
+    margin: 0 20.96% 0 0;
+}
+.contacts{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* media */
+@media(max-width:1520px){
+    .pers-1{
+        display:none;
+    }
+    main{
+        margin-bottom:100px;
+    }
+    /* header */
+    .body { 
+        width: 100vw;
+    }
+    .container{
+        width:75%;
+        margin: 0 auto;
+    }
+    header{
+        gap:6.58%;
+    }
+    .navbar, .navbar li{
+        gap:4%;
+    }   
+    .payment-button{
+        width:75%;
+        border-radius:15px;
+        text-align: center;
+        padding: 0 25px;
+    }
+    /* main */
+    .buy-valute-big-text{
+        font-size:20px;
+    }
+    .input-style{
+        width:380px;
+        font-size:13px;
+    }
+    .buy-valute{
+        width:520px;
+        height: 85vh;
+    }
+    .lil-container{
+        width:450px;
+    }
+    .check-text{
+        font-size:13px;
+    }
+    .span-check-text{
+        font-size:13px;
+    }
+    .convert-valute{
+        font-size:14px;
+    }
+    .warning-text{
+        font-size:14px;
+    }
+    .warning{
+        font-size:14px;
+    }
+    .submit-button{
+        width:450px;
+    }
+    .buy-valute{
+        margin:0 auto;
+    }
+
+    /* footer */
+    footer {
+        margin-top: 10vh;
+    }
+    .social{
+        font-size:10px;
+    }
+    .foot-zagolovok{
+        font-size:12px;
+    }
+    .global-footer{
+        gap:50px;
+    }
+    .flux-logo { 
+        display: none;
+    }
+    .footer-nav{
+        font-size:10px;
+    }
+    .under-logo-text{
+        font-size:8px;
+    }
+    .contacts{
+        font-size:10px;
+    }
+    .navigation{
+        margin-right:60px;
+    }
+}
+@media(max-width:1210px) {
+    /* header */
+    .logo { 
+        width: 20%;
+    }
+    .burger-btn { 
+        display: block;
+    }
+    .nav { 
+        position: absolute;
+        left: 0;
+        top: -230px;
+        backdrop-filter: blur(3px);
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        height: 210px;
+        transition: transform .5s;
+    }
+    .payment-button { 
+        width: 20%;
+        display: flex;
+        height: auto;
+        margin: 0 auto;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 10px;
+        font-size: calc(16px + 4 * (100vw / 1920));
+    }
+    header.open .nav{
+        transform: translateY(100%)
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-link { 
+        font-size: calc(16px + 6 * (100vw / 1920));
+        display: block;
+    }
+    /* main */
+    .buy-valute { 
+        min-height: 80vh;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .pers-1{
+        display:none;
+    }
+    .logo{
+        width: 25%;
+    }
+    .navbar{
+        font-size:calc(2px + 6 * (100vw / 1920));
+        gap:2.6%;
+        margin-left:25px;
+    }
+    .nav { 
+        position: absolute;
+        left: 0;
+        top: -120px;
+        backdrop-filter: blur(3px);
+        padding: 15px 0;
+        width: 100%;
+        text-align: center;
+        height: 90px;
+        transition: transform .5s;
+    }
+    .nav-links {
+        display: block;
+    }
+    .nav-link { 
+        font-size: 14px;
+        display: block;
+    }
+    header.open .nav{
+        transform: translateY(100%)
+    }
+    .payment-button{
+        display:none;
+    }
+    .burger-btn { 
+        display: block;
+    }
+    /* main */
+    .buy-valute-big-text{
+        font-size:14px;
+        text-align: center;
+    }
+    .lil-container{
+        width:80%;
+    }
+    .buy-form {
+        width: 100%;
+    }
+    .input-style{
+        width: 78%;
+        font-size:10px;
+        height: 35px;
+    }
+    .check-text{
+        font-size:10px;
+    }
+    .span-check-text{
+        font-size:10px;
+    }
+    .convert-valute{
+        font-size:10px;
+    }
+    .warning-text{
+        font-size:10px;
+    }
+    .warning{
+        font-size:10px;
+    }
+    .submit-button{
+        width: 100%;
+    }
+    .buy-valute{
+        margin:0 auto;
+        width: 100%;
+        min-height: 80vh;
+        margin-bottom: 50px;
+    }
+    /* footer */
+
+    footer{
+        background:#201F1F;
+    }
+
+    .social-media{
+        display:none;
+    }
+    .foot-zagolovok{
+        display:none;
+    }
+    .flux-logo { 
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .footer-nav{
+        display:none;
+    }
+    .under-logo-text{
+        display:none;
+    }
+    .contacts{
+        display:none;
+    }
+    .navigation{
+        display:none;
+    }
+}
